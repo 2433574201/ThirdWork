@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a1a"
+    android:orientation="vertical"
+    tools:context=".activity.ProcessPicActivity">
+
+    <TextView
+        android:id="@+id/process_pic_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/process_pic_text"
+        android:textColor="#cccccc"
+        android:textSize="15sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+        <ImageView
+            android:id="@+id/process_pic_image_view_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:scaleType="center" />
+        <ImageView
+            android:id="@+id/process_pic_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/foreground_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/in_visiable_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter"
+            android:visibility="invisible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/process_pic_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1">
+
+        <com.example.thirdwork.view.CustomButton
+            android:id="@+id/process_pic_cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="15dp"
+            android:text="Cancel"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:mCorner="20px" />
+
+        <com.example.thirdwork.view.CustomButton
+            android:id="@+id/process_pic_done_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:text="Done"
+            android:layout_marginTop="50dp"
+            android:textColor="#5c3e2a"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:mCorner="20px" />
+    </LinearLayout>
+</LinearLayout>

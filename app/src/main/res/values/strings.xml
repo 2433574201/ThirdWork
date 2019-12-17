@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ThirdWork</string>
+    <string name="diy_spinner_text">DIY Spinner</string>
+    <string name="select_for_spinner">Select Shape for DIY Spinner</string>
+    <string name="process_pic_text">Zoom in/out to crop and resize the pattern</string>
+</resources>
